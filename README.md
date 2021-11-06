@@ -2,10 +2,9 @@
   
 I'm Issac!  
 I currently attend Stevens Institute of Technology and study Computer Science.  
-My ambition is to be a part of a team that brings fruition to full-dive virtual reality,  
-but for now I'm trying to survive school, find a place among society, and learn.  
+My ambition is to be a part of a team that brings fruition to full-dive virtual reality, but for now I'm trying to survive school, find a place among society, and learn.  
   
-Here's my portfolio website -- It's a work in progress.
+Here's my portfolio website -- it's a work in progress.
 https://isciiz.web.app
 
 <!--
