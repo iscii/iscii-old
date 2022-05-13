@@ -6,13 +6,13 @@ name: Build Jekyll and Deploy to Firebase Hosting on push
 'on':
   push:
     branches:
-      - main
+      - workflow-test
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2 # this might (?) be useless
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
@@ -23,7 +23,7 @@ jobs:
           JEKYLL_PAT: '${{ secrets.JEKYLL_PAT }}'
         with:                               
           token: ${{ secrets.GITHUB_TOKEN }}
-      - run: bundle exec jekyll servesudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
+      - run: jekyll build && sudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
         env:
           FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
