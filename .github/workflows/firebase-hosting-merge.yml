@@ -19,6 +19,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - uses: helaili/jekyll-action@2.0.5  
+        env:
+          JEKYLL_PAT: '${{ secrets.JEKYLL_PAT }}'
         with:                               
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: sudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN" --non-interactive --verbose
