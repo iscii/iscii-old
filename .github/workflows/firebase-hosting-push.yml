@@ -12,17 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v2 # this might (?) be useless
+      - uses: actions/cache@v2
         with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: helaili/jekyll-action@2.0.5  
-        env:
-          JEKYLL_PAT: '${{ secrets.JEKYLL_PAT }}'
-        with:                               
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
+        with:
+          ruby-version: '3.0.4'
+          bundler-cache: true
+      - name: Install dependencies
+          run: bundle install
       - run: jekyll build && sudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
         env:
           FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
