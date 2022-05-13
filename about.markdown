@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-hello test this has been infiltrated by yours truly iscsa zhnge
+Heyo dis isac
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 

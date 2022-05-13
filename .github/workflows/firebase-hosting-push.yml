@@ -1,0 +1,29 @@
+name: Build Jekyll and Deploy to Firebase Hosting on push
+
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-ruby@v1 # installs bundler
+        with:
+          ruby-version: '3.0.4'
+      - name: Jekyll Dependencies
+        run: bundle install #installs dependencies from Gemfile
+
+      - name: npm Dependencies & Build
+        run: npm ci && npm run build # ci requires package.json and package-lock.json, run build requires build script in package.json
+        env:
+          FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
+          
+      - uses: FirebaseExtended/action-hosting-deploy@v0 # deploy
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ISCIIZ }}'
+          channelId: live
+          projectId: isciiz
