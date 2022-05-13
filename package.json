@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "firebase-tools": "^10.9.2"
+  },
+  "scripts": {
+    "dev": "echo \"not using dev rn\" && exit 1",
+    "build": "jekyll build",
+    "test": "echo \"not using test rn\" && exit 1"
+  }
+}

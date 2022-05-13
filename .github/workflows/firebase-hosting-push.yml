@@ -12,15 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '3.0.4'
-      - name: install dependencies
+      - name: Jekyll Dependencies
         run: bundle install
-      - run: jekyll build && sudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
+
+      - name: npm Dependencies & Build
+      - run: npm ci && npm run build # ci requires package.json and package-lock.json, run build requires build script in package.json
         env:
           FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+          
+      - uses: FirebaseExtended/action-hosting-deploy@v0 # firebase deploy
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ISCIIZ }}'
