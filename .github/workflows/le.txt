@@ -1,0 +1,4 @@
+ 
+sudo npm install -g firebase-tools && firebase deploy --token "$FIREBASE_TOKEN"
+
+might have to install gem and such to do bundle exec
