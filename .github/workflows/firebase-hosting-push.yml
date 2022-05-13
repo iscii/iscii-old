@@ -18,7 +18,7 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: actions/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
+      - uses: actions/setup-ruby@v1
         with:
           ruby-version: '3.0.4'
           bundler-cache: true
