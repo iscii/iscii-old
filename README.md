@@ -1,24 +1,29 @@
-### Good morning 🐇
-  
-I'm Issac!  
-I currently attend Stevens Institute of Technology and study Computer Science.  
-My ambition is to be a part of a team that brings to fruition full-dive virtual reality, but for now I'm trying to survive school, find a place among society, and learn.  
-<!--  
-Here's my portfolio website -- it's a work in progress.  
-https://isciiz.web.app
--->
+# iscii
 
-<!--
-**iscii/iscii** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This template should help get you started developing with Vue 3 in Vite.
 
-Here are some ideas to get you started:
+## Recommended IDE Setup
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
