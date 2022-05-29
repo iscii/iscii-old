@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">Hi</div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			[v-cloak]{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://unpkg.com/vue@3"></script>
+		<div style="cursor:pointer" id="app" onclick="count++" v-cloak> 
+			{{ message }} 
+			{{ count }} 
+			<input v-model="message" />
+			<br/>
+			<div v-if="isVisible" class="box"></div>
+			<navbar/>
+		</div>
+		<script>
+			let app = Vue.createApp({
+				data() {
+				return {
+				  message: 'Hello Vue!',
+				  isVisible: true,
+				  count: 0
+				}
+			  }
+			})
+
+			app.component('navbar', {
+				template: `
+					<div>
+						Hello world
+					</div>
+				`
+			})
+
+			app.mount('#app')
+		  </script>
+	</body>
 </html>
