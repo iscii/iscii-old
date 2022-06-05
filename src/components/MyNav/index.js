@@ -3,7 +3,7 @@ import "./index.scss";
 
 const MyNav = () => {
 	return (
-		<Navbar className="height" bg="dark" variant="dark">
+		<Navbar className="mt-5" bg="dark" variant="dark">
 			<Container>
 				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand>
 				<Nav className="me-auto">
