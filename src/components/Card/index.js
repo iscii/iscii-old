@@ -20,6 +20,7 @@ const Card = (props) => {
 			<img
 				className="w-25"
 				src={require("../../assets/images/mai.jpg")}
+				alt="mai"
 			/>
 			<div className="icardcaption w-75 d-flex flex-column justify-content-center align-items-center">
 				<h1 h-25>{props.title}</h1>
