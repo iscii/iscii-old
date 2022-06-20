@@ -1,0 +1,13 @@
+$bg-dark: #6c757d;
+
+.imain{
+    .nav-link{
+        color: white !important;
+    }
+    .nav-link.active{
+        /* revise hover animation too */
+        background-color: $bg-dark !important;
+        color: white !important;
+        border-color: transparent !important;
+    }
+}
