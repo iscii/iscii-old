@@ -4,10 +4,10 @@ I'm Issac!
 I currently attend Stevens Institute of Technology and study Computer Science.  
 My ambition is to be a part of a team that brings to fruition full-dive virtual reality, but for now I'm trying to survive school, find a place among society, and learn.  
 
-<!--  
+ 
 Here's my portfolio website -- it's a work in progress.  
 https://isciiz.web.app
--->
+
 
 <!--
 **iscii/iscii** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
