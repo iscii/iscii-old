@@ -1,5 +1,11 @@
 import "./index.scss";
 
-const Resume = () => "Resume";
+const Resume = () => {
+    return(
+        <div className="main">
+            Resume
+        </div>  
+    );
+};
 
 export default Resume;

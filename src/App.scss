@@ -4,5 +4,12 @@ html,
 body,
 #root {
 	height: 100vh;
+	overflow: auto; /*prevents margin styles of children from applying to root*/
 	background-color: rgb(33, 37, 41);
+}
+
+.imain{
+    padding-top: 25px;
+    padding-left: 115px;
+	padding-right: 115px;
 }

@@ -3,11 +3,11 @@ import "./index.scss";
 
 const MyNav = () => {
 	return (
-		<Navbar className="mt-5" bg="dark" variant="dark">
+		<Navbar className="mt-5" bg="dark" variant="dark" sticky="top">
 			<Container>
-				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand>
+				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand> {/* eventually replace this with a vector logo (?) */}
 				<Nav className="me-auto">
-					<Nav.Link href="/projects">Projects</Nav.Link>
+					<Nav.Link href="/projects">Projects</Nav.Link> {/* dropdown */}
 					<Nav.Link href="/resume">Resume</Nav.Link>
 				</Nav>
 			</Container>
