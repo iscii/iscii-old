@@ -1,4 +1,4 @@
-name: Build Vim and Deploy to Firebase Hosting on push
+name: Build React App and Deploy to Firebase Hosting on push
 
 'on':
   push:

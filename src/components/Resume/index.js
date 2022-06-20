@@ -2,7 +2,7 @@ import "./index.scss";
 
 const Resume = () => {
     return(
-        <div className="main">
+        <div className="imain">
             Resume
         </div>  
     );
