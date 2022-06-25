@@ -1,15 +1,35 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./utilities/variables.scss";
 
-html,
-body,
 #root {
 	height: 100vh;
 	overflow: auto; /*prevents margin styles of children from applying to root*/
-	background-color: rgb(33, 37, 41);
+	overflow-y: scroll;
+	background-color: $bg
 }
 
-.imain{
-    padding-top: 25px;
-    padding-left: 115px;
+.imain {
+	padding-top: 25px;
+	padding-left: 115px;
 	padding-right: 115px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $bg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $text;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $text-2;
 }

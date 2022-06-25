@@ -4,7 +4,7 @@ import Projects from "./components/Projects";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import "./App.scss"; //includes bootstrap
-//import logo from "./logo.svg";
+//import logo from "./assets/logo.svg";
 
 function App() {
 	return (

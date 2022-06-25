@@ -12,7 +12,7 @@ const Card = (props) => {
 		/* add tabbed components for projects */
 		<div
 			className={
-				"icard bg-secondary p-5 d-flex justify-content-between align-items-center " +
+				"icard bg-dark p-5 d-flex justify-content-between align-items-center " +
 				(props.reverse ? "flex-row-reverse " : "") +
 				props.classes
 			}

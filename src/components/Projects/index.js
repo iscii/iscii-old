@@ -1,11 +1,11 @@
 import { Tab, Tabs } from "react-bootstrap";
 import Card from "../Card";
+import Divider from "../Divider";
 import "./index.scss";
 
 const Projects = () => {
 	return (
 		<div className="imain">
-			Projects {/* tabs and/or carousel */}
 			<Tabs
 				defaultActiveKey="main"
 				transition={true}
@@ -16,32 +16,52 @@ const Projects = () => {
 					<Card
 						title="Web Development"
 						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
-						classes="rounded-bottom"
 					/>
 				</Tab>
 				<Tab eventKey="1" title="Level 1">
-					1
+					<Card
+						title="1"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="2" title="Level 2">
-					2
+					<Card
+						title="2"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="3" title="Level 3">
-					3
+					<Card
+						title="3"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="4" title="Level 4">
-					4
+					<Card
+						title="4"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="5" title="Level 5">
-					5
+					<Card
+						title="5"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="6" title="Level 6">
-					6
+					<Card
+						title="6"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 				<Tab eventKey="7" title="Level 7">
-					7
+					<Card
+						title="7"
+						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
+					/>
 				</Tab>
 			</Tabs>
-
+			<Divider />
 			<Card
 				reverse={true}
 				title="Discord Bot"

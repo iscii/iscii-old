@@ -1,13 +1,16 @@
-$bg-dark: #6c757d;
+@import "../../utilities/variables";
 
 .imain{
     .nav-link{
-        color: white !important;
+        color: $text !important;
+        transition: border-bottom-color ease-in-out 0.2s;
+        border: 1px solid $bg !important;
     }
-    .nav-link.active{
+    .nav-link.active, .nav-link:hover{
         /* revise hover animation too */
-        background-color: $bg-dark !important;
-        color: white !important;
-        border-color: transparent !important;
+        background-color: $bg !important;
+        color: $text !important;
+        border-bottom-color: $text !important;
+        
     }
 }
