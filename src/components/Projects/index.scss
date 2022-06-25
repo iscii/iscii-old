@@ -4,13 +4,12 @@
     .nav-link{
         color: $text !important;
         transition: border-bottom-color ease-in-out 0.2s;
-        border: 1px solid $bg !important;
+        border: transparent !important;
     }
     .nav-link.active, .nav-link:hover{
-        /* revise hover animation too */
+        /* hover animation swipe border in left to right?*/
         background-color: $bg !important;
         color: $text !important;
-        border-bottom-color: $text !important;
-        
+        border-bottom: 1px solid $text !important;
     }
 }
