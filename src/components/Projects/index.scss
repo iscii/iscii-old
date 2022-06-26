@@ -1,15 +1,20 @@
 @import "../../utilities/variables";
 
 .imain{
+    margin-bottom: calc($spacing-5*3); /* maybe instead of this add another sticky nav at the bottom like the top but with links */
     .nav-link{
-        color: $text !important;
-        transition: border-bottom-color ease-in-out 0.2s;
-        border: transparent !important;
-    }
-    .nav-link.active, .nav-link:hover{
-        /* hover animation swipe border in left to right?*/
         background-color: $bg !important;
         color: $text !important;
+        transition: border ease-in-out 0.2s;
+        border: 1px solid transparent !important;
         border-bottom: 1px solid $text !important;
+    }
+    .nav-link.active{
+        border: 1px solid $text !important;
+        border-bottom: 1px solid transparent !important;
+    }
+    .nav-link:hover{
+        border: 1px solid $text-2 !important;
+        border-bottom: 1px solid transparent !important;
     }
 }

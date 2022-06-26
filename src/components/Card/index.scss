@@ -1,4 +1,10 @@
+@import "../../utilities/variables.scss";
+
 .icard{
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: $spacing-5;
+    margin-bottom: $spacing-5;
+    height: 400px;
+    .icardcaption{
+        padding: $spacing-5;
+    }
 }

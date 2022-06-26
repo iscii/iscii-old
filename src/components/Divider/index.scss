@@ -1,5 +1,11 @@
+@import "../../utilities/variables.scss";
+
 .idivider{
     border-width: 0px 0px thin;
     border-style: solid;
     border-color: white;
+}
+
+.idivider:last-of-type{
+    margin-bottom: calc($spacing-5*2);
 }

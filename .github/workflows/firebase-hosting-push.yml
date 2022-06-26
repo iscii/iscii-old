@@ -13,7 +13,6 @@ jobs:
       - name: npm Dependencies & Build
         run: npm ci && npm run build # ci requires package.json and package-lock.json, run build requires build script in package.json
         env:
-          FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
           CI: "" #setting process.env.CI to false. true treats warnings as errors.
           
       - uses: FirebaseExtended/action-hosting-deploy@v0 # deploy

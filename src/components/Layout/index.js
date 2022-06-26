@@ -1,15 +1,17 @@
 import { Outlet } from "react-router-dom";
-import MyNav from "../MyNav";
+import MainNav from "../MainNav";
+import LinkNav from "../LinkNav";
 import "./index.scss";
 
 const Layout = () => {
 	return (
 		<div className="App">
-			<MyNav />
+			<MainNav />
 			<div className="page text-white">
 				<Outlet />
 				{/* homepage */}
 			</div>
+			<LinkNav />
 		</div>
 	);
 };

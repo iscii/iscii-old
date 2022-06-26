@@ -10,10 +10,10 @@ const Projects = () => {
 				defaultActiveKey="main"
 				transition={true}
 				id="uncontrolled-tab-example"
-				className="border-0"
 			>
-				<Tab eventKey="main" title="Main">
+				<Tab eventKey="main" title="Web Development">
 					<Card
+						main={true}
 						title="Web Development"
 						desc="Hello, this is going to be the description of the thing. Maybe I'll add a title too."
 					/>
@@ -61,13 +61,54 @@ const Projects = () => {
 					/>
 				</Tab>
 			</Tabs>
-			<Divider />
-			<Card
-				reverse={true}
-				title="Discord Bot"
-				desc="Hello, this is the description for the discord bot"
-				classes="rounded"
-			/>
+			<Tabs
+				defaultActiveKey="main"
+				transition={true}
+				id="uncontrolled-tab-example"
+			>
+				<Tab eventKey="main" title="Games">
+					<Card
+						reverse={true}
+						main={true}
+						title="Games"
+						desc="Some of my game projects, made with Unity2D."
+					/>
+				</Tab>
+				<Tab eventKey="headache" title="headache">
+					<Card
+						reverse={true}
+						title="headache"
+						desc="Fun for the first three minutes till the game starts living up to its name. I apologize in advance."
+					/>
+				</Tab>
+				<Tab eventKey="wtanl" title="wtanl">
+					<Card
+						reverse={true}
+						title="We'll Think About a Name Later"
+						desc="Unfinished game made with a great highschool friend of mine. Also quite cancerous."
+						// https://www.linkedin.com/in/qi-jie-wu-a362ab208/
+					/>
+				</Tab>
+			</Tabs>
+			<Tabs
+				defaultActiveKey="main"
+				transition={true}
+				id="uncontrolled-tab-example"
+			>
+				<Tab eventKey="main" title="Programs">
+					<Card
+						main={true}
+						title="Programs"
+						desc="Hello, this is the description for the discord bot"
+					/>
+				</Tab>
+				<Tab eventKey="isciiBot" title="isciiBot">
+					<Card
+						title="Discord Bot"
+						desc="Hello, this is the description for the discord bot"
+					/>
+				</Tab>
+			</Tabs>
 		</div>
 	);
 };
