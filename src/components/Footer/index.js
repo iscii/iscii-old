@@ -1,7 +1,8 @@
 import { Navbar, Container, Nav } from "react-bootstrap"; //react-bootstrap components
 import "./index.scss";
 
-const LinkNav = () => {
+/* not in use */
+const Footer = () => { 
 	return (
 		<Navbar className="mt-5" bg="dark" variant="dark" sticky="bottom">
 			<Container>
@@ -14,4 +15,4 @@ const LinkNav = () => {
 	);
 };
 
-export default LinkNav;
+export default Footer;

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import MainNav from "../MainNav";
-import LinkNav from "../LinkNav";
+//import Footer from "../Footer";
 import "./index.scss";
 
 const Layout = () => {
@@ -11,7 +11,6 @@ const Layout = () => {
 				<Outlet />
 				{/* homepage */}
 			</div>
-			<LinkNav />
 		</div>
 	);
 };
