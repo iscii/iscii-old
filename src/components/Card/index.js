@@ -8,6 +8,9 @@ const Card = (props) => {
 	 * *title (text): card title
 	 * *desc (text): card description
 	 * *link (text): card link
+	 * *img (text): img link
+	 * *used (text): tools used for project
+	 * *credits (text): credits (might make separate component for this)
 	 */
 
 	return (
