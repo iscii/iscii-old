@@ -6,5 +6,10 @@
     height: 400px;
     .icardcaption{
         padding: $spacing-5;
+
+        .icardtitle:hover{
+            cursor: pointer;
+            text-shadow: 0px 0px 10px white;
+        }
     }
 }

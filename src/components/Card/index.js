@@ -23,12 +23,15 @@ const Card = (props) => {
 			}
 		>
 			<img
+				/* https://mdbootstrap.com/docs/b5/react/content-styles/hover-effects/#! */
 				className={"w-25 " + (props.main ? "d-none" : "")}
 				src={require("../../assets/images/mai.jpg")}
 				alt="mai"
 			/>
 			<div className="icardcaption w-75 d-flex flex-column justify-content-center align-items-center">
-				<h1 className="h-25">{props.title}</h1>
+				<h1 className={"h-25 " + (props.link ? "icardtitle" : "")}>
+					<a className="text-decoration-none text-white" href={props.link} target="_blank">{props.title}</a>
+				</h1>
 				<div className="h-75 text-center fs-5">{props.desc}</div>
 			</div>
 		</div>
