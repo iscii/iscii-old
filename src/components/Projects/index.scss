@@ -1,7 +1,7 @@
 @import "../../utilities/variables";
 
 .imain{
-    margin-bottom: calc($spacing-5*3); /* maybe instead of this add another sticky nav at the bottom like the top but with links */
+
     .nav-link{
         background-color: $bg !important;
         color: $text !important;
@@ -16,5 +16,22 @@
     .nav-link:hover{
         border: 1px solid $text-2 !important;
         border-bottom: 1px solid transparent !important;
+    }
+
+    .icontent{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        
+            .isidetab li{
+                width: 100%;
+            }
+            .isidetab,
+            .isidetab button{
+                border: none !important;
+                border-bottom: 1px solid transparent !important;
+            }
+            .isidetab button.active{
+                border-bottom: 1px solid $text !important;
+            }
     }
 }
