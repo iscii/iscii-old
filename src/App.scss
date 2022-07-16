@@ -14,6 +14,10 @@
 	padding-right: 115px;
 }
 
+.navbar-nav .nav-link.active{
+	color: rgba(255, 255, 255, 0.55) !important; /* stops icon from remaining white when clicked*/
+}
+
 /* width */
 ::-webkit-scrollbar {
 	width: 5px;

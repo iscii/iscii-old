@@ -24,7 +24,7 @@ const Projects = () => {
 							transition={true}
 							id="uncontrolled-tab-example"
 						>
-							<Tab eventKey="main" title="Web Development">
+							<Tab eventKey="main" title="Description">
 								<Card
 									main={true}
 									title="Web Development"
@@ -89,7 +89,7 @@ const Projects = () => {
 							transition={true}
 							id="uncontrolled-tab-example"
 						>
-							<Tab eventKey="main" title="Websites">
+							<Tab eventKey="main" title="Description">
 								<Card
 									main={true}
 									title="Websites"
@@ -98,7 +98,6 @@ const Projects = () => {
 							</Tab>
 							<Tab eventKey="isciiz" title="isciiz">
 								<Card
-									reverse={true}
 									title="isciiz"
 									desc="My portfolio website (hi!). Learning React and Bootstrap with this one. React-bootstrap, Sass, Firebase Hosting, Personal Git."
 									link="https://isciiz.web.app"
@@ -107,7 +106,6 @@ const Projects = () => {
 							</Tab>
 							<Tab eventKey="stevenshonorpledge" title="stevenshonorpledge">
 								<Card
-									reverse={true}
 									title="stevenshonorpledge"
 									desc="A typeracing website for our school's honor pledge. A great tool to deduce Stevens impostors. Can also be used to train. Firebase Firestore & Hosting, Personal Git"
 									link="https://stevenshonorpledge.web.app/"
@@ -115,7 +113,6 @@ const Projects = () => {
 							</Tab>
 							<Tab eventKey="aster" title="Aster">
 								<Card
-									reverse={true}
 									title="Aster"
 									desc="A NYC high school club directory made in collaboration with several students across various high schools in the city. Jekyll, Firebase Firestore & Auth, Collaborative Git."
 									link="https://aster.nyc/"
@@ -131,7 +128,7 @@ const Projects = () => {
 							transition={true}
 							id="uncontrolled-tab-example"
 						>
-							<Tab eventKey="main" title="Games">
+							<Tab eventKey="main" title="Description">
 								<Card
 									main={true}
 									title="Games"
@@ -161,7 +158,7 @@ const Projects = () => {
 							transition={true}
 							id="uncontrolled-tab-example"
 						>
-							<Tab eventKey="main" title="Programs">
+							<Tab eventKey="main" title="Description">
 								<Card
 									main={true}
 									title="Programs"
@@ -170,9 +167,8 @@ const Projects = () => {
 							</Tab>
 							<Tab eventKey="isciiBot" title="isciiBot">
 								<Card
-									reverse={true}
 									title="isciiBot"
-									desc="A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also can randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature !)"
+									desc="A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also can randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature)!"
 									link="https://github.com/iscii/isciiBot"
 								/>
 							</Tab>

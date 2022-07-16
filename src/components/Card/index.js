@@ -4,7 +4,6 @@ const Card = (props) => {
 	/**
 	 * !props
 	 * *main ({true}, {false (default)}): no card image
-	 * *reverse ({true}, {false (default)}): card image is on the right
 	 * *title (text): card title
 	 * *desc (text): card description
 	 * *link (text): card link
@@ -17,18 +16,16 @@ const Card = (props) => {
 		/* add tabbed components for projects */
 		<div
 			className={
-				"icard bg-dark p-5 d-flex justify-content-center align-items-center " +
-				(props.reverse ? "flex-row-reverse " : "") +
-				props.classes
+				"icard bg-dark p-5 d-flex justify-content-center align-items-center flex-row-reverse"
 			}
 		>
 			<img
 				/* https://mdbootstrap.com/docs/b5/react/content-styles/hover-effects/#! */
-				className={"w-25 " + (props.main ? "d-none" : "")}
+				className={(props.main ? "d-none" : "")}
 				src={require("../../assets/images/mai.jpg")}
 				alt="mai"
 			/>
-			<div className="icardcaption w-75 d-flex flex-column justify-content-center align-items-center">
+			<div className="icardcaption d-flex flex-column justify-content-center align-items-center">
 				<h1 className={"h-25 " + (props.link ? "icardtitle" : "")}>
 					<a className="text-decoration-none text-white" href={props.link} target="_blank">{props.title}</a>
 				</h1>

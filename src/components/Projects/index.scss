@@ -22,7 +22,13 @@
         display: grid;
         grid-template-columns: 20% 80%;
         
+            .isidetab{
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
             .isidetab li{
+                display: flex;
+                align-items: center;
                 width: 100%;
             }
             .isidetab,
