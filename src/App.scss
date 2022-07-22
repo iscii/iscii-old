@@ -1,17 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./utilities/variables.scss";
 
-#root {
+#root, .App {
 	height: 100vh;
 	overflow: auto; /*prevents margin styles of children from applying to root*/
 	overflow-y: scroll;
 	background-color: $bg
 }
 
-.imain {
-	padding-top: 25px;
-	padding-left: 115px;
-	padding-right: 115px;
+.App{
+	display: grid;
+	grid-template-rows: 15% 70% 15%;
+
+	.imain {
+		color: $text;
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-left: 115px;
+		padding-right: 115px;
+	}
 }
 
 .navbar-nav .nav-link.active{

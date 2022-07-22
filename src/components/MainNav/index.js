@@ -8,7 +8,7 @@ library.add(fab);
 
 const MainNav = () => {
 	return (
-		<Navbar className="mt-5" bg="dark" variant="dark" sticky="top">
+		<Navbar bg="dark" variant="dark" sticky="top">
 			<Container d-flex space-between>
 				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand>
 				{/* eventually replace this with a vector logo (?) */}

@@ -7,10 +7,7 @@ const Layout = () => {
 	return (
 		<div className="App">
 			<MainNav />
-			<div className="page text-white">
-				<Outlet />
-				{/* homepage */}
-			</div>
+			<Outlet />
 		</div>
 	);
 };

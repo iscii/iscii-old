@@ -6,15 +6,18 @@
     margin-bottom: $spacing-5;
     height: 400px;
     
-    img{
-       width: 35%; 
-    }
-    
-    .icardcaption{
-        width: 65%;
-        padding: $spacing-5;
-        text-align: center;
+    .icardimgctnr{
+        width: 75%;
 
+        img{
+            width: 100%
+        }
+    }
+
+    .icardcaption{
+        width: 100%; /* of remaining space */
+        padding: $spacing-4;
+        text-align: center;
 
         .icardtitle:hover{
             cursor: pointer;
