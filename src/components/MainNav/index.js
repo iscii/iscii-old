@@ -12,7 +12,7 @@ const MainNav = () => {
 			<Container d-flex space-between>
 				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand>
 				{/* eventually replace this with a vector logo (?) */}
-				{/* make it so that the page you're on will be highlighted in the navbar */}
+				{/* make it so that the page you're on will be highlighted/underlined in the navbar */}
 				<Nav className="me-auto">
 					<Nav.Link href="/projects">Projects</Nav.Link>
 					{/* <Nav.Link href="/resume">Resume</Nav.Link> */}
