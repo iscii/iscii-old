@@ -5,12 +5,7 @@ import "./index.scss";
 
 const Projects = () => {
 	return (
-		<div className="imain">
-			{/* Featured section?? (includes stuff I actually wanna show ppl) */}
-			{/* Tabs on the left for each category instead of carousel/scrolling. Replaces main tab too. */}
-			{/* <div className="tabs">
-
-			</div> */}
+		<div className="imain">			
 			<div className="icontent">
 				<Tabs
 					defaultActiveKey="main"

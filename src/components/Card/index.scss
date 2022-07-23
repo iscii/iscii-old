@@ -8,9 +8,16 @@
     
     .icardimgctnr{
         width: 75%;
+        background: rgb(0, 0, 0);
 
         img{
-            width: 100%
+            width: 100%;
+            opacity: 1;
+            -webkit-transition: .1s ease-in-out;
+            transition: .1s ease-in-out;
+        }
+        img:hover{
+            opacity: .8;
         }
     }
 

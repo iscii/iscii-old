@@ -1,4 +1,3 @@
-import { propTypes } from "react-bootstrap/esm/Image";
 import "./index.scss";
 
 const Card = (props) => {
@@ -28,6 +27,7 @@ const Card = (props) => {
 				</a>
 			</div>
 			<div className="icardcaption d-flex flex-column justify-content-center align-items-center">
+				{/* gridbox -> keep header and desc in same position across diff tabs */}
 				<h1 className={"h-25 " + (props.link ? "icardtitle" : "")}>
 					{/* make clickability more visible (some kinda text decor?)*/}
 					<a className="text-decoration-none text-white" href={props.link} target="_blank">{props.title}</a>
