@@ -20,14 +20,14 @@ const Home = () => {
 					*/}
 					
 					Quoth the summary in all my profiles, <br/>
-					My ambition is to be a part of a team that brings to fruition full-dive virtual reality, 
-					but for now I'm trying to survive school, find a place among society, and learn. <br/> <br/>
+					&emsp;My ambition is to be a part of a team that brings to fruition full-dive virtual reality, <br/>
+					&emsp;but for now I'm trying to survive school, find a place among society, and learn. <br/> <br/>
 				</div>
 				
 				<div>
 					{/* in small text, flex end */}
 					Quotes are cheesy. Here's one I abide by &#40;after the Stevens Honor System, of course&#41;: <br/>
-					"If you knew success was a certainty, what would you attempt to do?" - Vance Wade Hinds
+					&emsp;"If you knew success was a certainty, what would you attempt to do?" - Vance Wade Hinds
 				</div>
 			</div>
 			{/* image to right? or a collection of stuff that represents me */}

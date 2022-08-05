@@ -136,12 +136,12 @@ const Projects = () => {
 									title="Games"
 									desc="Some of my game projects, made in Unity2D."
 									/* Build the games into WebGL or upload to itch and link those */
-								/>
+								/>	
 							</Tab>
 							<Tab eventKey="headache" title="headache">
 								<Card
 									title="headache"
-									desc="Fun for the first three minutes till the game begins living up to its name. I apologize in advance."
+									desc="Fun for the first three minutes till the game begins living up to its name. I apologize in advance."/* include creation process (yt tuts) */
 									link="https://github.com/iscii/headaches"
 								/>
 							</Tab>
@@ -169,7 +169,7 @@ const Projects = () => {
 							<Tab eventKey="isciiBot" title="isciiBot">
 								<Card
 									title="isciiBot"
-									desc="A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also can randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature)!"
+									desc="A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also set up polls or randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature)!"
 									link="https://github.com/iscii/isciiBot"
 								/>
 							</Tab>
