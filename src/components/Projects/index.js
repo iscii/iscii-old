@@ -148,8 +148,9 @@ const Projects = () => {
 							<Tab eventKey="wtanl" title="wtanl">
 								<Card
 									title="We'll Think About a Name Later"
-									desc="Unfinished game made with a great highschool friend of mine. Also quite cancerous."
-									// https://www.linkedin.com/in/qi-jie-wu-a362ab208/
+									desc="Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time. || Link will direct to friend's LinkedIn while credits component is uncompleted ||"
+									img="games/wtanl.png"
+									link="https://www.linkedin.com/in/qi-jie-wu-a362ab208/"
 								/>
 							</Tab>
 						</Tabs>
