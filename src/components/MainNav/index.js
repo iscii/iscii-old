@@ -13,11 +13,13 @@ const MainNav = () => {
 				<Navbar.Brand href="/">Issac Zheng</Navbar.Brand>
 				{/* eventually replace this with a vector logo (?) */}
 				{/* make it so that the page you're on will be highlighted/underlined in the navbar */}
-				<Nav className="me-auto">
+				<Nav className="">
 					<Nav.Link href="/projects">Projects</Nav.Link>
-					{/* <Nav.Link href="/resume">Resume</Nav.Link> */}
 				</Nav>
-				<Nav>
+				<Nav className="me-auto"> {/* me-auto must be applied to the last nav item */}
+					<Nav.Link href={(require("../../assets/resume.pdf"))} target="_blank">Resume</Nav.Link>
+				</Nav>
+				<Nav>	
 					<Nav.Link
 						href="https://www.linkedin.com/in/issacz/"
 						target="_blank"

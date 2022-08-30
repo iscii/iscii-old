@@ -1,6 +1,5 @@
 import { Tab, Tabs } from "react-bootstrap";
 import Card from "../Card";
-import Divider from "../Divider";
 import "./index.scss";
 
 const Projects = () => {
