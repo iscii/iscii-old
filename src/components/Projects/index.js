@@ -21,7 +21,7 @@ const Projects = () => {
 							<Tab eventKey="main" title="Description">
 								<Card
 									title="Web Development"
-									desc="Web Development projects from the junior high school days. All written in raw HTML, CSS & Javascript. Majorly proud of them all, have a look! Special thanks to Sir Ivan Turner, you molded my passion for programming."
+									desc="Web Development projects from the junior high school days. Mostly games. All written in raw HTML, CSS & Javascript. Majorly proud of them all, have a look! Special thanks to Sir Ivan Turner, you molded my passion for programming."
 									link="https://github.com/iscii/Web-Development-2019-2020"
 								/>
 							</Tab>
@@ -137,10 +137,11 @@ const Projects = () => {
 									/* Build the games into WebGL or upload to itch and link those */
 								/>	
 							</Tab>
-							<Tab eventKey="headache" title="headache">
+							<Tab eventKey="headaches" title="headache">
 								<Card
-									title="headache"
+									title="headaches"
 									desc="Fun for the first three minutes till the game begins living up to its name. I apologize in advance."/* include creation process (yt tuts) */
+									img="games/headaches.png"
 									link="https://github.com/iscii/headaches"
 								/>
 							</Tab>
@@ -149,7 +150,7 @@ const Projects = () => {
 									title="We'll Think About a Name Later"
 									desc="Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time. || Link will direct to friend's LinkedIn while credits component is uncompleted ||"
 									img="games/wtanl.png"
-									link="https://www.linkedin.com/in/qi-jie-wu-a362ab208/"
+									link="https://github.com/iscii/we-ll-think-about-a-name-later"
 								/>
 							</Tab>
 						</Tabs>
