@@ -12,7 +12,7 @@ const Projects = () => {
 					id="uncontrolled-tab-example"
 					className="isidetab"
 				>
-					<Tab eventKey="main" title="Web Development">
+					<Tab eventKey="main" title="Websites">
 						<Tabs
 							defaultActiveKey="main"
 							transition={true}
@@ -20,7 +20,48 @@ const Projects = () => {
 						>
 							<Tab eventKey="main" title="Description">
 								<Card
-									title="Web Development"
+									title="Websites"
+									desc="Web projects, amateur (for now >:>)"
+								/>
+							</Tab>
+							<Tab eventKey="isciiz" title="isciiz">
+								<Card
+									title="isciiz"
+									desc="My portfolio website (hi!). Learning React and Bootstrap with this one."
+									tools="React-bootstrap, Sass, Firebase Hosting, Personal Git"
+									/* include some credits */
+								/>
+							</Tab>
+							<Tab eventKey="stevenshonorpledge" title="stevenshonorpledge">
+								<Card
+									title="stevenshonorpledge"
+									desc="A typeracing website for our school's honor pledge. A great tool to deduce Stevens impostors. Why, you ask? Why not?"
+									img="websites/honor_pledge.png"
+									tools="Firebase Firestore & Hosting, Personal Git"
+									link="https://stevenshonorpledge.web.app/"
+								/>
+							</Tab>
+							<Tab eventKey="aster" title="Aster">
+								<Card
+									title="Aster"
+									desc="A NYC high school club directory made in collaboration with several students across various high schools in the city."
+									img="websites/aster.png"
+									tools="Jekyll, Firebase Firestore & Auth, Collaborative Git"
+									link="https://aster.nyc/"
+									/* include some credits */
+								/>
+							</Tab>
+						</Tabs>
+					</Tab>
+					<Tab eventKey="webdev" title="Web Games">
+						<Tabs
+							defaultActiveKey="main"
+							transition={true}
+							id="uncontrolled-tab-example"
+						>
+							<Tab eventKey="main" title="Description">
+								<Card
+									title="Web Games"
 									desc="Web Development projects from the junior high school days. Mostly games. All written in raw HTML, CSS & Javascript. Majorly proud of them all, have a look! Special thanks to Sir Ivan Turner, you molded my passion for programming."
 									link="https://github.com/iscii/Web-Development-2019-2020"
 								/>
@@ -83,7 +124,7 @@ const Projects = () => {
 							</Tab>
 						</Tabs>
 					</Tab>
-					<Tab eventKey="websites" title="Websites">
+					<Tab eventKey="games" title="Unity Games">
 						<Tabs
 							defaultActiveKey="main"
 							transition={true}
@@ -91,48 +132,7 @@ const Projects = () => {
 						>
 							<Tab eventKey="main" title="Description">
 								<Card
-									title="Websites"
-									desc="Web projects, amateur (for now >:>)"
-								/>
-							</Tab>
-							<Tab eventKey="isciiz" title="isciiz">
-								<Card
-									title="isciiz"
-									desc="My portfolio website (hi!). Learning React and Bootstrap with this one."
-									tools="React-bootstrap, Sass, Firebase Hosting, Personal Git"
-									/* include some credits */
-								/>
-							</Tab>
-							<Tab eventKey="stevenshonorpledge" title="stevenshonorpledge">
-								<Card
-									title="stevenshonorpledge"
-									desc="A typeracing website for our school's honor pledge. A great tool to deduce Stevens impostors. Why, you ask? Why not?"
-									img="websites/honor_pledge.png"
-									tools="Firebase Firestore & Hosting, Personal Git"
-									link="https://stevenshonorpledge.web.app/"
-								/>
-							</Tab>
-							<Tab eventKey="aster" title="Aster">
-								<Card
-									title="Aster"
-									desc="A NYC high school club directory made in collaboration with several students across various high schools in the city."
-									img="websites/aster.png"
-									tools="Jekyll, Firebase Firestore & Auth, Collaborative Git"
-									link="https://aster.nyc/"
-									/* include some credits */
-								/>
-							</Tab>
-						</Tabs>
-					</Tab>
-					<Tab eventKey="games" title="Games">
-						<Tabs
-							defaultActiveKey="main"
-							transition={true}
-							id="uncontrolled-tab-example"
-						>
-							<Tab eventKey="main" title="Description">
-								<Card
-									title="Games"
+									title="Unity Games"
 									desc="Some of my game projects, made in Unity2D."
 									/* Build the games into WebGL or upload to itch and link those */
 								/>	
@@ -148,7 +148,7 @@ const Projects = () => {
 							<Tab eventKey="wtanl" title="wtanl">
 								<Card
 									title="We'll Think About a Name Later"
-									desc="Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time. || Link will direct to friend's LinkedIn while credits component is uncompleted ||"
+									desc="Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time."
 									img="games/wtanl.png"
 									link="https://github.com/iscii/we-ll-think-about-a-name-later"
 								/>
