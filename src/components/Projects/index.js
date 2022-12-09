@@ -153,6 +153,14 @@ const Projects = () => {
 									link="https://github.com/iscii/we-ll-think-about-a-name-later"
 								/>
 							</Tab>
+							<Tab eventKey="kiki" title="kiki">
+								<Card
+									title="Kiki's Cleaning Service"
+									desc="A game simulating the recycling of unused e-waste, created with five groupmates for a humanities project. Don't mind the cursor."
+									img="games/kiki.png"
+									link="https://github.com/iscii/kiki"
+								/>
+							</Tab>
 						</Tabs>
 					</Tab>
 					<Tab eventKey="programs" title="Programs">
