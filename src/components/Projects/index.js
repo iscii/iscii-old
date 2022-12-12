@@ -179,7 +179,7 @@ const Projects = () => {
 								<Card
 									title="isciiBot"
 									desc="A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also set up polls or randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature)!"
-									img="programs/isciibot.pngs"
+									img="programs/isciibot.png"
 									link="https://discord.com/oauth2/authorize?client_id=662780078337425481&permissions=8&scope=bot%20applications.commands"
 								/>
 							</Tab>
